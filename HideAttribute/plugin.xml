@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.hideattribute"
+		name="Hide Attribute"
+		description="Hide Attribute"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.hideattribute.HideAttributePlugin">
+	
+	<actionSets>
+		<actionSet id="com.vp.plugin.sample.hideattribute.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.hideattribute.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.hideattribute.actionset1.HideAttributeAction"
+					actionType="generalAction"
+      		name="Hide Attribute"
+		      description="Hide"
+					style="normal"
+          icon="icon/icon.png"
+          tooltip="Hide Attribute"
+					toolbarPath="com.vp.plugin.sample.hideattribute.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.hideattribute.actions.HideAttributeActionControl"/>
+			</action>
+			
+		</actionSet>
+	</actionSets>	
+</plugin>
